@@ -1,0 +1,21 @@
+﻿pregunta,fuente_esperada,respuesta_esperada
+¿Cuántos días laborables de vacaciones hay en 2026?,01_politica_vacaciones_2026.txt,25 días laborables
+¿Con cuánta antelación debo solicitar vacaciones?,01_politica_vacaciones_2026.txt,10 días naturales
+¿Quién aprueba las vacaciones?,01_politica_vacaciones_2026.txt,Responsable directo
+¿Hasta cuándo puedo trasladar vacaciones?,01_politica_vacaciones_2026.txt,31 de marzo del año siguiente
+¿Cuántos días de teletrabajo hay vigentes?,02_politica_teletrabajo_2026.txt,Hasta 3 días por semana
+¿Puedo trabajar desde otro país?,02_politica_teletrabajo_2026.txt,Solo con autorización previa
+¿Con cuánto tiempo comunico cambios de teletrabajo?,02_politica_teletrabajo_2026.txt,48 horas cuando sea posible
+¿Cómo notifico una avería del ordenador?,03_manual_incidencias_it.txt,Ticket en portal de soporte
+¿Cuál es el tiempo objetivo de primera respuesta de TI?,03_manual_incidencias_it.txt,8 horas laborables
+¿Debo dar mi contraseña al soporte?,03_manual_incidencias_it.txt,No
+¿Cuál es el presupuesto anual de formación?,04_guia_beneficios.txt,600 euros
+¿Qué justificantes necesito para formación?,04_guia_beneficios.txt,Factura y justificante de asistencia
+¿Qué documento antiguo hablaba de dos días de teletrabajo?,05_teletrabajo_borrador_antiguo.txt,Borrador obsoleto 2024
+¿Dónde se solicita teletrabajo?,02_politica_teletrabajo_2026.txt,Portal interno
+¿Qué hago si tengo una incidencia crítica de seguridad?,03_manual_incidencias_it.txt,Llamar inmediatamente al centro de soporte
+¿Cómo se tramita el reembolso de formación?,04_guia_beneficios.txt,Tras presentar factura y asistencia
+¿En qué fecha entra en vigor la política de teletrabajo?,02_politica_teletrabajo_2026.txt,1 de marzo de 2026
+¿Cuál es el horario del comedor?,,No consta en los documentos
+¿Cuánto cuesta el parking de la empresa?,,No consta en los documentos
+¿Quién es el director general?,,No consta en los documentos

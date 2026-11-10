@@ -1,0 +1,5 @@
+chromadb>=0.5,<2
+scikit-learn>=1.4,<2
+pypdf>=4,<7
+python-dotenv>=1,<2
+google-genai>=1,<2

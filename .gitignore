@@ -1,0 +1,11 @@
+# Secretos (clave de Gemini)
+.env
+
+# Entorno virtual de Python
+.venv/
+__pycache__/
+*.pyc
+
+# Índice generado (se regenera con: python -m src.rag index)
+.chroma/
+.tfidf.joblib

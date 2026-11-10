@@ -1,0 +1,78 @@
+Backend de embeddings: tfidf | fragmentos 650/100 | 44 preguntas (36 con respuesta, 8 trampa)
+ctx = número medio de fragmentos que se pasan al modelo
+
+## 1. Conjunto del kit (17 preguntas con fuente)
+Configuración                                  Hit@1   Hit@3   MRR@3     P@3     R@3    F1@3    ctx
+Base (kit)                                     52.9%  100.0%   0.745   0.373   0.971   0.529   3.00
+Filtro de obsoletos                            64.7%   94.1%   0.784   0.353   0.912   0.500   3.00
+Jerarquía de fuentes (FAQ +0,1)                70.6%  100.0%   0.833   0.353   0.941   0.506   3.00
+Filtro + jerarquía                             82.4%   94.1%   0.873   0.333   0.882   0.476   3.00
+Filtro + jerarquía + modo automático           88.2%  100.0%   0.931   0.353   0.941   0.506   3.00
+
+## 2. Conjunto ampliado (36 preguntas con respuesta)
+Configuración                                  Hit@1   Hit@3   MRR@3     P@3     R@3    F1@3    ctx
+Base (kit)                                     55.6%   94.4%   0.727   0.417   0.914   0.548   3.00
+Filtro + jerarquía                             66.7%   86.1%   0.745   0.370   0.817   0.487   3.00
+Filtro + jerarquía + modo automático           77.8%   97.2%   0.856   0.407   0.900   0.537   3.00
+
+## 3. Hit@1 y Recall@3 por tipo de pregunta (conjunto ampliado; entre paréntesis, número de preguntas)
+Configuración                                    factual (11)     detalle (10)    historica (4)   parafrasis (6)  comparacion (4)    conflicto (1)
+Base (kit)                                         73% / 0.95       40% / 1.00      100% / 1.00       67% / 0.67        0% / 0.85        0% / 1.00
+Filtro + jerarquía                                 91% / 0.91       90% / 1.00        0% / 0.25       67% / 0.67        0% / 0.85      100% / 1.00
+Filtro + jerarquía + modo automático               91% / 0.91       90% / 1.00      100% / 1.00       67% / 0.67        0% / 0.85      100% / 1.00
+
+## 4. Detector de preguntas históricas (44 preguntas)
+Históricas detectadas: 4/4 | falsos positivos: 0/40
+
+## 5. Recorte del contexto por margen de distancia (k=3, configuración con modo automático)
+  margen     P@3     R@3    F1@3   Hit@3    ctx
+    None   0.407   0.900   0.537   97.2%   3.00
+     0.2   0.486   0.900   0.590   97.2%   2.75
+    0.15   0.569   0.887   0.647   97.2%   2.42
+     0.1   0.681   0.859   0.718   94.4%   2.03
+   0.075   0.731   0.819   0.724   86.1%   1.75
+    0.05   0.810   0.799   0.767   83.3%   1.36
+    0.03   0.861   0.748   0.775   77.8%   1.11
+    0.02   0.875   0.748   0.780   77.8%   1.08
+
+## 6. Umbral de rechazo: distancia del mejor resultado (configuración con modo automático)
+con respuesta: mín 0.661 · mediana 0.842 · máx 0.916
+sin respuesta: mín 0.725 · mediana 0.888 · máx 0.952
+  umbral   trampas rechazadas  respuestas perdidas
+   0.705              8/8                 33/36   
+   0.720              8/8                 33/36   
+   0.821              7/8                 23/36   
+   0.888              3/8                  7/36   
+   0.921              1/8                  0/36   
+   0.957              0/8                  0/36   
+Umbral más bajo que no pierde ninguna respuesta (0.916): rechaza 1/8 trampas; 7 trampas quedan dentro del rango de las preguntas con respuesta
+Preguntas sin respuesta y la más lejana con respuesta:
+  0.952 | TRAMPA        | ¿Quién es el director general?
+  0.916 | con respuesta | ¿La empresa me paga algún curso?
+  0.914 | con respuesta | ¿Qué justificantes necesito para formación?
+  0.913 | con respuesta | ¿Quién aprueba las vacaciones?
+  0.910 | TRAMPA        | ¿Cuántos días de permiso de paternidad hay?
+  0.906 | TRAMPA        | ¿Qué sanción hay por pedir las vacaciones fuera de plazo?
+  0.901 | con respuesta | ¿Debo dar mi contraseña al soporte?
+  0.895 | con respuesta | ¿Con quién contacto para cancelar unas vacaciones ya solicitadas?
+  0.891 | con respuesta | ¿Cuántos días de teletrabajo hay vigentes?
+  0.891 | con respuesta | Se me ha roto el portátil, ¿qué tengo que hacer?
+  0.888 | TRAMPA        | ¿Incluyen los beneficios un seguro médico privado?
+
+## 7. Preguntas cuya fuente principal no sale la primera (configuración con modo automático, k=3)
+   3. ¿Quién aprueba las vacaciones? | rango=3 | recuperado=['06', '04', '01'] | tipo=detalle
+  14. ¿Dónde se solicita teletrabajo? | rango=2 | recuperado=['06', '02', '04'] | tipo=factual
+  23. Se me ha roto el portátil, ¿qué tengo que hacer? | rango=3 | recuperado=['02', '01', '03'] | tipo=parafrasis
+  25. ¿Pueden pedirme los técnicos el código de verificación del móvil? | rango=0 | recuperado=['01', '02', '04'] | tipo=parafrasis
+  32. ¿Quién aprueba las vacaciones y quién el teletrabajo? | rango=2 | recuperado=['06', '01', '04'] | tipo=comparacion
+  33. ¿Qué trámites se solicitan en el portal interno? | rango=3 | recuperado=['06', '02', '01'] | tipo=comparacion
+  34. ¿Qué solicitudes necesitan la aprobación del responsable? | rango=3 | recuperado=['04', '02', '01'] | tipo=comparacion
+  35. ¿Qué áreas autorizan trasladar vacaciones y trabajar desde el extranjero? | rango=2 | recuperado=['02', '01', '03'] | tipo=comparacion
+
+## 8. Tamaño de fragmento (TF-IDF, configuración con modo automático)
+size/overlap   frag.   Hit@1   Hit@3   MRR@3     P@3     R@3    F1@3    ctx
+ 200/40           21   72.2%   94.4%   0.819   0.671   0.852   0.716   3.00
+ 300/50           15   75.0%   91.7%   0.824   0.630   0.877   0.705   3.00
+ 450/80            9   75.0%   94.4%   0.833   0.519   0.887   0.633   3.00
+ 650/100           6   77.8%   97.2%   0.856   0.407   0.900   0.537   3.00
+1000/150           6   77.8%   97.2%   0.856   0.407   0.900   0.537   3.00

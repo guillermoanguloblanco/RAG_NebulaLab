@@ -1,0 +1,4 @@
+DOCUMENTO: Procedimiento de incidencias TI NébulaLab
+Versión: 2026-01 | Responsable: Soporte TI
+Para una incidencia de ordenador, red o acceso, abrir un ticket en el portal de soporte, indicar equipo afectado, descripción del error, impacto y capturas sin datos sensibles. El soporte responde inicialmente en un plazo objetivo de 8 horas laborables para incidencias normales. En incidencias críticas de seguridad se debe llamar inmediatamente al centro de soporte y no adjuntar contraseñas.
+El usuario no debe compartir claves ni códigos MFA con nadie, incluido el equipo de soporte.

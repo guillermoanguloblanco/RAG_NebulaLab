@@ -1,0 +1,45 @@
+﻿pregunta,fuente_esperada,fuentes_relevantes,respuesta_esperada,clave,tipo,origen
+¿Cuántos días laborables de vacaciones hay en 2026?,01_politica_vacaciones_2026.txt,01_politica_vacaciones_2026.txt,25 días laborables,25,factual,kit
+¿Con cuánta antelación debo solicitar vacaciones?,01_politica_vacaciones_2026.txt,01_politica_vacaciones_2026.txt,10 días naturales,10 días,factual,kit
+¿Quién aprueba las vacaciones?,01_politica_vacaciones_2026.txt,01_politica_vacaciones_2026.txt,Responsable directo,responsable,detalle,kit
+¿Hasta cuándo puedo trasladar vacaciones?,01_politica_vacaciones_2026.txt,01_politica_vacaciones_2026.txt,31 de marzo del año siguiente,31 de marzo,detalle,kit
+¿Cuántos días de teletrabajo hay vigentes?,02_politica_teletrabajo_2026.txt,02_politica_teletrabajo_2026.txt,Hasta 3 días por semana,3 días|tres días,factual,kit
+¿Puedo trabajar desde otro país?,02_politica_teletrabajo_2026.txt,02_politica_teletrabajo_2026.txt,Solo con autorización previa,autorización,factual,kit
+¿Con cuánto tiempo comunico cambios de teletrabajo?,02_politica_teletrabajo_2026.txt,02_politica_teletrabajo_2026.txt,48 horas cuando sea posible,48,detalle,kit
+¿Cómo notifico una avería del ordenador?,03_manual_incidencias_it.txt,03_manual_incidencias_it.txt;06_preguntas_frecuentes.txt,Ticket en portal de soporte,ticket|portal de soporte,factual,kit
+¿Cuál es el tiempo objetivo de primera respuesta de TI?,03_manual_incidencias_it.txt,03_manual_incidencias_it.txt,8 horas laborables,8 horas,factual,kit
+¿Debo dar mi contraseña al soporte?,03_manual_incidencias_it.txt,03_manual_incidencias_it.txt;06_preguntas_frecuentes.txt,No,\bno\b,factual,kit
+¿Cuál es el presupuesto anual de formación?,04_guia_beneficios.txt,04_guia_beneficios.txt;06_preguntas_frecuentes.txt,600 euros,600,factual,kit
+¿Qué justificantes necesito para formación?,04_guia_beneficios.txt,04_guia_beneficios.txt,Factura y justificante de asistencia,factura,detalle,kit
+¿Qué documento antiguo hablaba de dos días de teletrabajo?,05_teletrabajo_borrador_antiguo.txt,05_teletrabajo_borrador_antiguo.txt,Borrador obsoleto 2024,borrador|2024,historica,kit
+¿Dónde se solicita teletrabajo?,02_politica_teletrabajo_2026.txt,02_politica_teletrabajo_2026.txt,Portal interno,portal interno,factual,kit
+¿Qué hago si tengo una incidencia crítica de seguridad?,03_manual_incidencias_it.txt,03_manual_incidencias_it.txt,Llamar inmediatamente al centro de soporte,llam|centro de soporte,factual,kit
+¿Cómo se tramita el reembolso de formación?,04_guia_beneficios.txt,04_guia_beneficios.txt,Tras presentar factura y asistencia,factura,factual,kit
+¿En qué fecha entra en vigor la política de teletrabajo?,02_politica_teletrabajo_2026.txt,02_politica_teletrabajo_2026.txt,1 de marzo de 2026,1 de marzo|2026-03-01|01/03/2026,detalle,kit
+¿Cuál es el horario del comedor?,,,No consta en los documentos,,trampa,kit
+¿Cuánto cuesta el parking de la empresa?,,,No consta en los documentos,,trampa,kit
+¿Quién es el director general?,,,No consta en los documentos,,trampa,kit
+¿Cuánto descanso anual me corresponde si trabajo a jornada completa?,01_politica_vacaciones_2026.txt,01_politica_vacaciones_2026.txt,25 días laborables,25,parafrasis,equipo
+¿Puedo trabajar desde casa toda la semana?,02_politica_teletrabajo_2026.txt,02_politica_teletrabajo_2026.txt,No: hasta 3 días por semana,3 días|tres días,parafrasis,equipo
+"Se me ha roto el portátil, ¿qué tengo que hacer?",03_manual_incidencias_it.txt,03_manual_incidencias_it.txt;06_preguntas_frecuentes.txt,Abrir un ticket en el portal de soporte,ticket|portal de soporte,parafrasis,equipo
+¿La empresa me paga algún curso?,04_guia_beneficios.txt,04_guia_beneficios.txt;06_preguntas_frecuentes.txt,"Sí, hasta 600 euros anuales con aprobación",600,parafrasis,equipo
+¿Pueden pedirme los técnicos el código de verificación del móvil?,03_manual_incidencias_it.txt,03_manual_incidencias_it.txt,No: no se comparten claves ni códigos MFA,\bno\b|MFA,parafrasis,equipo
+¿Qué plazo tengo para pasar una nota de gastos?,04_guia_beneficios.txt,04_guia_beneficios.txt,Antes del día 5 del mes siguiente,día 5,parafrasis,equipo
+¿Qué datos debo incluir al abrir un ticket de soporte?,03_manual_incidencias_it.txt,03_manual_incidencias_it.txt,"Equipo afectado, descripción del error, impacto y capturas",equipo afectado|descripción,detalle,equipo
+¿Qué requisitos técnicos se exigen para teletrabajar?,02_politica_teletrabajo_2026.txt,02_politica_teletrabajo_2026.txt,Conexión segura y equipo corporativo,conexión segura|equipo corporativo,detalle,equipo
+¿Qué información hay que aportar para solicitar una formación?,04_guia_beneficios.txt,04_guia_beneficios.txt,"Nombre del curso, coste, fechas y justificación profesional",coste|justificación,detalle,equipo
+¿Con quién contacto para cancelar unas vacaciones ya solicitadas?,01_politica_vacaciones_2026.txt,01_politica_vacaciones_2026.txt,Con RR. HH.,RR\. ?HH,detalle,equipo
+¿Se consideran aprobadas las vacaciones si no recibo respuesta?,01_politica_vacaciones_2026.txt,01_politica_vacaciones_2026.txt,No: hace falta confirmación expresa,confirmación expresa,detalle,equipo
+¿Quién aprueba las vacaciones y quién el teletrabajo?,01_politica_vacaciones_2026.txt,01_politica_vacaciones_2026.txt;02_politica_teletrabajo_2026.txt;06_preguntas_frecuentes.txt,El responsable directo en ambos casos,responsable,comparacion,equipo
+¿Qué trámites se solicitan en el portal interno?,01_politica_vacaciones_2026.txt,01_politica_vacaciones_2026.txt;02_politica_teletrabajo_2026.txt;06_preguntas_frecuentes.txt,Las vacaciones y el teletrabajo,vacaciones[\s\S]*teletrabajo|teletrabajo[\s\S]*vacaciones,comparacion,equipo
+¿Qué solicitudes necesitan la aprobación del responsable?,01_politica_vacaciones_2026.txt,01_politica_vacaciones_2026.txt;02_politica_teletrabajo_2026.txt;04_guia_beneficios.txt;06_preguntas_frecuentes.txt,"Vacaciones, teletrabajo y formación",formaci|formativ,comparacion,equipo
+¿Qué áreas autorizan trasladar vacaciones y trabajar desde el extranjero?,01_politica_vacaciones_2026.txt,01_politica_vacaciones_2026.txt;02_politica_teletrabajo_2026.txt,RR. HH. (traslado) y Personas y Seguridad (extranjero),Personas[\s\S]*RR\. ?HH|RR\. ?HH[\s\S]*Personas,comparacion,equipo
+¿Cuántos días de teletrabajo permitía el borrador anterior?,05_teletrabajo_borrador_antiguo.txt,05_teletrabajo_borrador_antiguo.txt,2 días a la semana (borrador obsoleto),2 días|dos días,historica,equipo
+¿Qué cambió en el teletrabajo entre la versión de 2024 y la actual?,05_teletrabajo_borrador_antiguo.txt,05_teletrabajo_borrador_antiguo.txt;02_politica_teletrabajo_2026.txt,De 2 días (borrador 2024) a hasta 3 días (política 2026),2[\s\S]*3|dos[\s\S]*tres,historica,equipo
+¿Qué política sustituyó al borrador de teletrabajo?,05_teletrabajo_borrador_antiguo.txt,05_teletrabajo_borrador_antiguo.txt;02_politica_teletrabajo_2026.txt,La Política de teletrabajo 2026-03,2026,historica,equipo
+¿Sigue aplicándose el límite de dos días de teletrabajo?,02_politica_teletrabajo_2026.txt,02_politica_teletrabajo_2026.txt,No: la política vigente permite hasta 3 días,3 días|tres días,conflicto,equipo
+¿Cuántos días de permiso de paternidad hay?,,,No consta en los documentos,,trampa,equipo
+¿Cuál es el sueldo de un analista júnior?,,,No consta en los documentos,,trampa,equipo
+¿Incluyen los beneficios un seguro médico privado?,,,No consta en los documentos,,trampa,equipo
+¿Qué sanción hay por pedir las vacaciones fuera de plazo?,,,No consta en los documentos,,trampa,equipo
+¿Cuál es el teléfono del centro de soporte?,,,No consta en los documentos,,trampa,equipo
