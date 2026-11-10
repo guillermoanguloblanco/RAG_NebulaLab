@@ -1,6 +1,6 @@
 # Respuestas de Gemini · prompt estricto · embeddings gemini
 
-Modelo: preguntas 1-22: gemini-3.1-flash-lite · preguntas 23-44: gemini-3.5-flash
+Modelo: preguntas 1-22: gemini-3.5-flash · preguntas 23-44: gemini-3.5-flash
 
 ## 1. ¿Cuántos días laborables de vacaciones hay en 2026?
 **Tipo:** factual · **Esperado:** 25 días laborables (01)
@@ -14,7 +14,7 @@ El personal con jornada completa dispone de 25 días laborables de vacaciones po
 **Recuperado:** [F1] 01 (0.259) · [F2] 02 (0.361) · [F3] 04 (0.379) · modo vigente
 **Comprobación automática:** correcta · cita correcta
 
-La solicitud debe registrarse en el portal interno con al menos 10 días naturales de antelación, salvo urgencias autorizadas [F1].
+La solicitud de vacaciones debe registrarse en el portal interno con al menos 10 días naturales de antelación, salvo urgencias autorizadas [F1].
 
 ## 3. ¿Quién aprueba las vacaciones?
 **Tipo:** detalle · **Esperado:** Responsable directo (01)
@@ -35,7 +35,7 @@ Los días no disfrutados se pueden trasladar hasta el 31 de marzo del año sigui
 **Recuperado:** [F1] 02 (0.25) · [F2] 01 (0.316) · [F3] 04 (0.393) · modo vigente
 **Comprobación automática:** correcta · cita correcta
 
-Se permite teletrabajar hasta 3 días por semana [F1].
+Se permite teletrabajar hasta 3 días por semana, sujeto a las necesidades del equipo y a la autorización del responsable [F1].
 
 ## 6. ¿Puedo trabajar desde otro país?
 **Tipo:** factual · **Esperado:** Solo con autorización previa (02)
@@ -49,21 +49,21 @@ No se puede trabajar desde fuera del país sin autorización previa del área de
 **Recuperado:** [F1] 02 (0.267) · [F2] 01 (0.334) · [F3] 03 (0.358) · modo vigente
 **Comprobación automática:** correcta · cita correcta
 
-Los cambios puntuales en el teletrabajo se comunican con 48 horas de antelación siempre que sea posible [F1].
+Los cambios puntuales de teletrabajo se comunican con 48 horas de antelación siempre que sea posible [F1].
 
 ## 8. ¿Cómo notifico una avería del ordenador?
 **Tipo:** factual · **Esperado:** Ticket en portal de soporte (03; 06)
 **Recuperado:** [F1] 03 (0.278) · [F2] 04 (0.399) · [F3] 02 (0.405) · modo vigente
 **Comprobación automática:** correcta · cita correcta
 
-Para una incidencia de ordenador, se debe abrir un ticket en el portal de soporte indicando el equipo afectado, la descripción del error, el impacto y capturas sin datos sensibles [F1].
+Para notificar una avería de ordenador se debe abrir un ticket en el portal de soporte, indicando el equipo afectado, la descripción del error, el impacto y capturas sin datos sensibles [F1].
 
 ## 9. ¿Cuál es el tiempo objetivo de primera respuesta de TI?
 **Tipo:** factual · **Esperado:** 8 horas laborables (03)
 **Recuperado:** [F1] 03 (0.277) · [F2] 01 (0.403) · [F3] 02 (0.412) · modo vigente
 **Comprobación automática:** correcta · cita correcta
 
-El soporte responde inicialmente en un plazo objetivo de 8 horas laborables para incidencias normales [F1].
+El plazo objetivo de primera respuesta del soporte de TI es de 8 horas laborables para incidencias normales [F1].
 
 ## 10. ¿Debo dar mi contraseña al soporte?
 **Tipo:** factual · **Esperado:** No (03; 06)
@@ -77,21 +77,21 @@ No, el usuario no debe compartir claves ni códigos MFA con nadie, incluido el e
 **Recuperado:** [F1] 04 (0.238) · [F2] 01 (0.389) · [F3] 02 (0.415) · modo vigente
 **Comprobación automática:** correcta · cita correcta
 
-Cada empleado dispone de un presupuesto formativo anual de 600 euros [F1].
+Cada empleado dispone de un presupuesto formativo anual de 600 euros, sujeto a aprobación del responsable [F1].
 
 ## 12. ¿Qué justificantes necesito para formación?
 **Tipo:** detalle · **Esperado:** Factura y justificante de asistencia (04)
 **Recuperado:** [F1] 04 (0.254) · [F2] 01 (0.367) · [F3] 03 (0.373) · modo vigente
 **Comprobación automática:** correcta · cita correcta
 
-El reembolso se tramita tras presentar factura y justificante de asistencia [F1].
+Para tramitar el reembolso de formación se requiere presentar la factura y el justificante de asistencia [F1].
 
 ## 13. ¿Qué documento antiguo hablaba de dos días de teletrabajo?
 **Tipo:** historica · **Esperado:** Borrador obsoleto 2024 (05)
 **Recuperado:** [F1] 05 (0.23) · [F2] 02 (0.259) · [F3] 01 (0.342) · modo historico
-**Comprobación automática:** correcta · cita correcta
+**Comprobación automática:** correcta · cita a revisar
 
-El documento antiguo que mencionaba dos días de teletrabajo es el borrador 2024-09, el cual se encuentra obsoleto [F1].
+El documento borrador versión 2024-09 permitía 2 días de teletrabajo, pero tiene estado obsoleto y no es aplicable [F1]. Prevalece la Política de teletrabajo versión 2026-03 por estar vigente, la cual permite hasta 3 días por semana [F2].
 
 ## 14. ¿Dónde se solicita teletrabajo?
 **Tipo:** factual · **Esperado:** Portal interno (02)
@@ -112,14 +112,14 @@ En incidencias críticas de seguridad se debe llamar inmediatamente al centro de
 **Recuperado:** [F1] 04 (0.225) · [F2] 03 (0.38) · [F3] 01 (0.396) · modo vigente
 **Comprobación automática:** correcta · cita correcta
 
-El reembolso se tramita tras presentar factura y justificante de asistencia, debiendo presentarse las solicitudes de gastos antes del día 5 del mes siguiente [F1].
+El reembolso de formación se tramita tras presentar la factura y el justificante de asistencia, debiendo presentarse la solicitud de gastos antes del día 5 del mes siguiente [F1].
 
 ## 17. ¿En qué fecha entra en vigor la política de teletrabajo?
 **Tipo:** detalle · **Esperado:** 1 de marzo de 2026 (02)
 **Recuperado:** [F1] 02 (0.26) · [F2] 01 (0.342) · [F3] 04 (0.404) · modo vigente
 **Comprobación automática:** correcta · cita correcta
 
-La política de teletrabajo entró en vigor el 1 de marzo de 2026 [F1].
+La política de teletrabajo está vigente desde el 1 de marzo de 2026 (2026-03-01) [F1].
 
 ## 18. ¿Cuál es el horario del comedor?
 **Tipo:** trampa · **Esperado:** No consta en los documentos (sin fuente)
@@ -154,7 +154,7 @@ El personal con jornada completa dispone de 25 días laborables de vacaciones po
 **Recuperado:** [F1] 02 (0.268) · [F2] 01 (0.352) · [F3] 03 (0.397) · modo vigente
 **Comprobación automática:** correcta · cita correcta
 
-No, se permite teletrabajar hasta 3 días por semana, sujeto a necesidades del equipo y autorización del responsable [F1].
+No, únicamente se permite teletrabajar hasta 3 días por semana, sujeto a las necesidades del equipo y autorización del responsable [F1].
 
 ## 23. Se me ha roto el portátil, ¿qué tengo que hacer?
 **Tipo:** parafrasis · **Esperado:** Abrir un ticket en el portal de soporte (03; 06)

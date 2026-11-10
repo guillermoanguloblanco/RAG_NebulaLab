@@ -16,16 +16,16 @@ Exactitud por tipo: factual 11/11 · detalle 10/10 · historica 4/4 · trampa 8/
 A revisar a mano: 13, 33
 
 ## Prompt estricto (44/44 preguntas respondidas)
-Modelo: preguntas 1-22: gemini-3.1-flash-lite · preguntas 23-44: gemini-3.5-flash
+Modelo: preguntas 1-22: gemini-3.5-flash · preguntas 23-44: gemini-3.5-flash
 Fragmentos de contexto por pregunta (media): 3.00
-Longitud media de la respuesta (palabras) · con respuesta: 18.1 · trampa: 6.0
+Longitud media de la respuesta (palabras) · con respuesta: 19.5 · trampa: 6.0
 Preguntas con respuesta · exactitud (contiene el dato esperado): 36/36
-Preguntas con respuesta · cita correcta (todas las citas son fuentes relevantes): 36/36
+Preguntas con respuesta · cita correcta (todas las citas son fuentes relevantes): 35/36
 Preguntas con respuesta · rechazadas por error: 0/36
 Preguntas trampa · rechazo correcto: 8/8
 Preguntas trampa · rechazo con texto añadido: 0/8
 Fidelidad · respuestas con todas las cifras respaldadas por el contexto: 44/44
 Citas a fragmentos inexistentes: 0/44
 Exactitud por tipo: factual 11/11 · detalle 10/10 · historica 4/4 · trampa 8/8 · parafrasis 6/6 · comparacion 4/4 · conflicto 1/1
-A revisar a mano: ninguna
+A revisar a mano: 13
 
